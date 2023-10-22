@@ -16,4 +16,4 @@ def static(filePath):
 @app.route("/test")
 def test():
     aaa = request.query.test
-    return aaas
+    return aaa
