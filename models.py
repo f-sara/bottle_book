@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, String, Text, text, create_engine,\
-    DATETIME, Boolean, Datetime
+from sqlalchemy import Column, Integer,\
+    String, Text, text, create_engine,\
+        DATETIME, Boolean, DateTime
 from sqlalchemy.sql import func
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
@@ -27,7 +28,7 @@ class Books(Base):
     author = Column("suthor", String(255))
     publisher = Column("publisher", String(255))
     memo = Column("memo", Text())
-    create_date = Column("create_date", Datetime(timezone=True), default=func.now(), nullable=False)
+    create_date = Column("create_date", DateTime(timezone=True), default=func.now(), nullable=False)
     delFlg = Column("del", Boolean)
     
 class BookUser(Base):
