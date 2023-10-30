@@ -9,7 +9,7 @@ app_sess = sess.create_session(app)
 
 # 画像, CSS, JSなどの固定コンテンツはこれで処理する
 
-@app.get("/static/<filePath>")
+@app.get("/static/<filePath:path>")
 def static(filePath):
     return static_file(filePath, root="./static")
 
