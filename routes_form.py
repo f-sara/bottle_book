@@ -117,7 +117,7 @@ def regist():
                 author = author,
                 publisher = publisher,
                 memo = memo,
-                delFlag = False)
+                delFlg = False)
             connection.add(book)
             connection.commit()
             connection.close()
