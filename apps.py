@@ -4,7 +4,7 @@ import bottle
 # 各パスルーティング
 import routes
 
-# import routes_form
+import routes_form
 import routes_list
 import routes_login
 from utils.session import Session
